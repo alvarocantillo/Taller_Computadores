@@ -63,15 +63,16 @@ public class Crear_Computador extends AppCompatActivity {
         fotos.add(R.drawable.images2);
     }
 
+
     public void guardar(View v){
-        String id;
-        int  mar, ra, colo,siste,foto,tip;
+        String id,mar, ra, colo,siste,tip;
+        int  foto;
         foto=Datos.fotoAleatoria(fotos);
-        mar=cmbmarca.getSelectedItemPosition();
-        ra=cmbram.getSelectedItemPosition();
-        colo=cmbcolor.getSelectedItemPosition();
-        tip=cmbtipo.getSelectedItemPosition();
-        siste=cmbsistema.getSelectedItemPosition();
+        mar=convetidoratexto(cmbmarca);
+        ra=convetidoratexto(cmbram);
+        colo=convetidoratexto(cmbcolor);
+        tip=convetidoratexto(cmbtipo);
+        siste=convetidoratexto(cmbsistema);
         id=Datos.getId();
 
         Computador c=new Computador(id,mar,ra,colo,tip,siste,foto);
@@ -93,5 +94,9 @@ public class Crear_Computador extends AppCompatActivity {
         finish();
         Intent i= new Intent(Crear_Computador.this,Principal.class);
         startActivity(i);
+    }
+    public String convetidoratexto(Spinner s){
+        String txt=s.getSelectedItem().toString();
+        return txt;
     }
 }

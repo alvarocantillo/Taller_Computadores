@@ -61,7 +61,7 @@
 
                 <TableRow
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent" >
+                    android:layout_height="match_parent">
 
                     <TextView
                         android:id="@+id/textView8"
@@ -78,7 +78,7 @@
 
                 <TableRow
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent" >
+                    android:layout_height="match_parent">
 
                     <TextView
                         android:id="@+id/textView10"
@@ -95,7 +95,7 @@
 
                 <TableRow
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent" >
+                    android:layout_height="match_parent">
 
                     <TextView
                         android:id="@+id/textView12"
@@ -105,6 +105,23 @@
 
                     <TextView
                         android:id="@+id/txt_color_detalle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TextView" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tipo" />
+
+                    <TextView
+                        android:id="@+id/txt_tipo_detalle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="TextView" />
@@ -129,16 +146,7 @@
             </TableLayout>
         </LinearLayout>
 
-        <com.github.clans.fab.FloatingActionButton
-            android:id="@+id/menu_eliminar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="eliminar"
-            android:src="@android:drawable/ic_menu_delete"
-            app:fab_colorNormal="@color/colorAccent"
-            app:fab_colorPressed="@color/colorAccent"
-            fab:fab_label="@string/eliminar"
-            fab:fab_size="mini" />
+
     </android.support.v4.widget.NestedScrollView>
     <com.github.clans.fab.FloatingActionMenu
         android:id="@+id/menu"
@@ -172,6 +180,16 @@
             fab:fab_label="@string/modificar"
             app:fab_colorNormal="@color/colorAccent"
             app:fab_colorPressed="@color/colorAccent"/>
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/menu_eliminar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="eliminar"
+            android:src="@android:drawable/ic_menu_delete"
+            app:fab_colorNormal="@color/colorAccent"
+            app:fab_colorPressed="@color/colorAccent"
+            fab:fab_label="@string/eliminar"
+            fab:fab_size="mini" />
 
 
     </com.github.clans.fab.FloatingActionMenu>

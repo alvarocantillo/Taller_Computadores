@@ -11,17 +11,15 @@ import android.widget.TextView;
 
 public class DetalleComputador extends AppCompatActivity {
     private Intent i;
-    private int foto,marca,ramm,colos,sistema;
+    private String tipo,marca,ramm,colos,sistema;
     private Bundle bundle;
     private String id;
+    private int foto;
     private ImageView fot;
-    private String[] mar;
-    private String[] ram;
-    private String[] color;
-    private String[] siste;
     private TextView txtmarcaDetalle;
     private TextView txtramDetalle;
     private TextView txtcolorDetalle;
+    private TextView txttipoDetalle;
     private TextView txtsisteDetalle;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,26 +28,26 @@ public class DetalleComputador extends AppCompatActivity {
         txtmarcaDetalle=findViewById(R.id.txt_marca_detalle);
         txtramDetalle=findViewById(R.id.txt_ram_detalle);
         txtcolorDetalle=findViewById(R.id.txt_color_detalle);
+        txttipoDetalle=findViewById(R.id.txt_tipo_detalle);
         txtsisteDetalle=findViewById(R.id.txt_sistema_detalle);
         fot=findViewById(R.id.foto);
-        mar=getResources().getStringArray(R.array.smarca);
-        ram=getResources().getStringArray(R.array.sram);
-        color=getResources().getStringArray(R.array.scolor);
-        siste=getResources().getStringArray(R.array.ssistema);
+
 
         i=getIntent();
         bundle=i.getBundleExtra("datos");
-        marca=bundle.getInt("marca");
-        ramm=bundle.getInt("ram");
-        colos=bundle.getInt("color");
-        sistema=bundle.getInt("sistema");
+        marca=bundle.getString("marca");
+        ramm=bundle.getString("ram");
+        colos=bundle.getString("color");
+        tipo=bundle.getString("tipo");
+        sistema=bundle.getString("sistema");
         foto=bundle.getInt("foto");
         id=bundle.getString("id");
 
-        txtmarcaDetalle.setText(mar[marca]);
-        txtramDetalle.setText(ram[ramm]);
-        txtcolorDetalle.setText(color[colos]);
-        txtsisteDetalle.setText(siste[sistema]);
+        txtmarcaDetalle.setText(marca);
+        txtramDetalle.setText(ramm);
+        txtcolorDetalle.setText(colos);
+        txttipoDetalle.setText(tipo);
+        txtsisteDetalle.setText(sistema);
         fot.setImageResource(foto);
     }
 

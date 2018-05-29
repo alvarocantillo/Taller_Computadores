@@ -6,14 +6,14 @@ package com.example.android.taller_computadores_ac;
 
 public class Computador {
     private String id;
-    private int marca;
-    private int ram;
-    private int color;
-    private int tipo;
-    private int sistema;
+    private String marca;
+    private String ram;
+    private String color;
+    private String tipo;
+    private String sistema;
     private int foto;
 
-    public Computador(String id, int marca, int ram, int color, int tipo, int sistema, int foto) {
+    public Computador(String id, String marca, String ram, String color, String tipo, String sistema, int foto) {
         this.id = id;
         this.marca = marca;
         this.ram = ram;
@@ -22,14 +22,12 @@ public class Computador {
         this.sistema = sistema;
         this.foto = foto;
     }
-
     public Computador(){
 
     }
     public Computador(String id){
         this.id=id;
     }
-
     public String getId() {
         return id;
     }
@@ -38,43 +36,43 @@ public class Computador {
         this.id = id;
     }
 
-    public int getMarca() {
+    public String getMarca() {
         return marca;
     }
 
-    public void setMarca(int marca) {
+    public void setMarca(String marca) {
         this.marca = marca;
     }
 
-    public int getRam() {
+    public String getRam() {
         return ram;
     }
 
-    public void setRam(int ram) {
+    public void setRam(String ram) {
         this.ram = ram;
     }
 
-    public int getColor() {
+    public String getColor() {
         return color;
     }
 
-    public void setColor(int color) {
+    public void setColor(String color) {
         this.color = color;
     }
 
-    public int getTipo() {
+    public String getTipo() {
         return tipo;
     }
 
-    public void setTipo(int tipo) {
+    public void setTipo(String tipo) {
         this.tipo = tipo;
     }
 
-    public int getSistema() {
+    public String getSistema() {
         return sistema;
     }
 
-    public void setSistema(int sistema) {
+    public void setSistema(String sistema) {
         this.sistema = sistema;
     }
 
@@ -85,6 +83,9 @@ public class Computador {
     public void setFoto(int foto) {
         this.foto = foto;
     }
+
+
+
 
     public void guardar(){
         Datos.guardar(this);
