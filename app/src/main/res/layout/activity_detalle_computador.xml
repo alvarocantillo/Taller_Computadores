@@ -128,6 +128,17 @@
                 </TableRow>
             </TableLayout>
         </LinearLayout>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/menu_eliminar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="eliminar"
+            android:src="@android:drawable/ic_menu_delete"
+            app:fab_colorNormal="@color/colorAccent"
+            app:fab_colorPressed="@color/colorAccent"
+            fab:fab_label="@string/eliminar"
+            fab:fab_size="mini" />
     </android.support.v4.widget.NestedScrollView>
     <com.github.clans.fab.FloatingActionMenu
         android:id="@+id/menu"
@@ -161,18 +172,6 @@
             fab:fab_label="@string/modificar"
             app:fab_colorNormal="@color/colorAccent"
             app:fab_colorPressed="@color/colorAccent"/>
-
-        <com.github.clans.fab.FloatingActionButton
-            android:id="@+id/menu_eliminar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="eliminar"
-            android:src="@android:drawable/ic_menu_delete"
-            app:fab_colorNormal="@color/colorAccent"
-            app:fab_colorPressed="@color/colorAccent"
-            fab:fab_label="@string/eliminar"
-            fab:fab_size="mini" />
-
 
 
     </com.github.clans.fab.FloatingActionMenu>

@@ -1,11 +1,13 @@
 package com.example.android.taller_computadores_ac;
 
+
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.RadioButton;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -54,11 +56,12 @@ public class AdaptadorComputador extends RecyclerView.Adapter<AdaptadorComputado
 
     public static class ComputadorViewHolder extends RecyclerView.ViewHolder{
         private ImageView foto;
-        private RadioButton marca;
-        private RadioButton ram;
-        private RadioButton color;
-        private RadioButton sistema;
+        private TextView marca;
+        private TextView ram;
+        private TextView color;
+        private TextView sistema;
         private View v;
+
 
         public ComputadorViewHolder(View itemView){
             super(itemView);
@@ -67,6 +70,7 @@ public class AdaptadorComputador extends RecyclerView.Adapter<AdaptadorComputado
             marca = v.findViewById(R.id.lblmarca);
             ram = v.findViewById(R.id.lblram);
             color = v.findViewById(R.id.lblcolor);
+            sistema=v.findViewById(R.id.lblsistema);
         }
 
     }

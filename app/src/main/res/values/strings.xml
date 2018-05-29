@@ -11,15 +11,47 @@
     <string name="limpiar">Limpiar</string>
     <string name="hp">hp</string>
     <string name="lenovo">Lenovo</string>
+    <string name="dell">Dell</string>
     <string name="dos_gb">2 GB</string>
     <string name="cuatro_gb">4 GB</string>
+    <string name="ocho_gb">8 GB</string>
     <string name="blanco">Blanco</string>
     <string name="negro">Negro</string>
+    <string name="azul">azul</string>
     <string name="portatil">Portatil</string>
     <string name="mesa">Mesa</string>
     <string name="windows">Windows</string>
     <string name="ubuntu">Ubuntu</string>
+    <string name="macos">macOS</string>
     <string name="informacion">INFORMACION</string>
     <string name="eliminar">Eliminar</string>
     <string name="modificar">Modificar</string>
+    <string-array name="smarca">
+    <item>@string/hp</item>
+    <item>@string/lenovo</item>
+        <item>@string/dell</item>
+    </string-array>
+    <string-array name="sram">
+        <item>@string/dos_gb</item>
+        <item>@string/cuatro_gb</item>
+        <item>@string/ocho_gb</item>
+    </string-array>
+    <string-array name="scolor">
+        <item>@string/blanco</item>
+        <item>@string/negro</item>
+        <item>@string/azul</item>
+    </string-array>
+    <string-array name="ssistema">
+        <item>@string/windows</item>
+        <item>@string/ubuntu</item>
+        <item>@string/macos</item>
+    </string-array>
+    <string-array name="stipo">
+        <item>@string/portatil</item>
+        <item>@string/mesa</item>
+    </string-array>
+    <string name="mensaje_guardado_exitoso">Computador guardado exitosamente!</string>
+    <string name="positivo">Si</string>
+    <string name="negativo">No</string>
+    <string name="pregunta_eliminacion">¿Esta seguro que desea eliminar este computador?</string>
 </resources>

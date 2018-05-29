@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "374552615411-s81s8a59nitccmbc0hlc7ujgelf27jes.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.android.taller_computadores_ac",
+            "certificate_hash": "aa0c2d545259a94edf8441cb4b2f03e0a717ff4f"
+          }
+        },
+        {
           "client_id": "374552615411-6kcgaujtanf5upkjfu9a2fj9k2kcsu0j.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {

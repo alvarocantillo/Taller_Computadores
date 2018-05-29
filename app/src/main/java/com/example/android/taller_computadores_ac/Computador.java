@@ -6,15 +6,15 @@ package com.example.android.taller_computadores_ac;
 
 public class Computador {
     private String id;
-    private String marca;
-    private String ram;
-    private String color;
-    private String tipo;
-    private String sistema;
+    private int marca;
+    private int ram;
+    private int color;
+    private int tipo;
+    private int sistema;
     private int foto;
 
-    public Computador(String id,String marca, String ram, String color, String tipo, String sistema, int foto) {
-        this.id= id;
+    public Computador(String id, int marca, int ram, int color, int tipo, int sistema, int foto) {
+        this.id = id;
         this.marca = marca;
         this.ram = ram;
         this.color = color;
@@ -22,6 +22,7 @@ public class Computador {
         this.sistema = sistema;
         this.foto = foto;
     }
+
     public Computador(){
 
     }
@@ -36,43 +37,44 @@ public class Computador {
     public void setId(String id) {
         this.id = id;
     }
-    public String getMarca() {
+
+    public int getMarca() {
         return marca;
     }
 
-    public void setMarca(String marca) {
+    public void setMarca(int marca) {
         this.marca = marca;
     }
 
-    public String getRam() {
+    public int getRam() {
         return ram;
     }
 
-    public void setRam(String ram) {
+    public void setRam(int ram) {
         this.ram = ram;
     }
 
-    public String getColor() {
+    public int getColor() {
         return color;
     }
 
-    public void setColor(String color) {
+    public void setColor(int color) {
         this.color = color;
     }
 
-    public String getTipo() {
+    public int getTipo() {
         return tipo;
     }
 
-    public void setTipo(String tipo) {
+    public void setTipo(int tipo) {
         this.tipo = tipo;
     }
 
-    public String getSistema() {
+    public int getSistema() {
         return sistema;
     }
 
-    public void setSistema(String sistema) {
+    public void setSistema(int sistema) {
         this.sistema = sistema;
     }
 
