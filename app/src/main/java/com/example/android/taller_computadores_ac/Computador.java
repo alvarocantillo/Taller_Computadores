@@ -5,14 +5,16 @@ package com.example.android.taller_computadores_ac;
  */
 
 public class Computador {
+    private String id;
     private String marca;
-    private double ram;
+    private String ram;
     private String color;
     private String tipo;
     private String sistema;
     private int foto;
 
-    public Computador(String marca, double ram, String color, String tipo, String sistema, int foto) {
+    public Computador(String id,String marca, String ram, String color, String tipo, String sistema, int foto) {
+        this.id= id;
         this.marca = marca;
         this.ram = ram;
         this.color = color;
@@ -23,7 +25,17 @@ public class Computador {
     public Computador(){
 
     }
+    public Computador(String id){
+        this.id=id;
+    }
 
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
     public String getMarca() {
         return marca;
     }
@@ -32,11 +44,11 @@ public class Computador {
         this.marca = marca;
     }
 
-    public double getRam() {
+    public String getRam() {
         return ram;
     }
 
-    public void setRam(double ram) {
+    public void setRam(String ram) {
         this.ram = ram;
     }
 
@@ -70,6 +82,13 @@ public class Computador {
 
     public void setFoto(int foto) {
         this.foto = foto;
+    }
+
+    public void guardar(){
+        Datos.guardar(this);
+    }
+    public void eliminar(){
+        Datos.eliminarComputador(this);
     }
 
 
