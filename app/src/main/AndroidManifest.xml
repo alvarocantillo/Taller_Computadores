@@ -19,7 +19,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Crear_Computador"></activity>
+        <activity android:name=".Crear_Computador" />
+        <activity android:name=".itemComputador" />
+        <activity android:name=".DetalleComputador"></activity>
     </application>
 
 </manifest>

@@ -9,4 +9,17 @@
     <string name="sistema">Sistema Operativo</string>
     <string name="guardar">Guardar</string>
     <string name="limpiar">Limpiar</string>
+    <string name="hp">hp</string>
+    <string name="lenovo">Lenovo</string>
+    <string name="dos_gb">2 GB</string>
+    <string name="cuatro_gb">4 GB</string>
+    <string name="blanco">Blanco</string>
+    <string name="negro">Negro</string>
+    <string name="portatil">Portatil</string>
+    <string name="mesa">Mesa</string>
+    <string name="windows">Windows</string>
+    <string name="ubuntu">Ubuntu</string>
+    <string name="informacion">INFORMACION</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="modificar">Modificar</string>
 </resources>
