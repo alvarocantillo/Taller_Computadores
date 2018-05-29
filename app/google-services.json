@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "374552615411",
+    "firebase_url": "https://taller-computadores.firebaseio.com",
+    "project_id": "taller-computadores",
+    "storage_bucket": "taller-computadores.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:374552615411:android:0d1eb9a3363a4358",
+        "android_client_info": {
+          "package_name": "com.example.android.taller_computadores_ac"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "374552615411-6kcgaujtanf5upkjfu9a2fj9k2kcsu0j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.android.taller_computadores_ac",
+            "certificate_hash": "a23526cd2c614a030786471aedad7266955a4718"
+          }
+        },
+        {
+          "client_id": "374552615411-fvfci8qh0m6p301gm7pim1vgs5qmf8rn.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "374552615411-fvfci8qh0m6p301gm7pim1vgs5qmf8rn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlg6FvBPIjtiwkBPGU8Qagau22YYs8zqA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "374552615411-fvfci8qh0m6p301gm7pim1vgs5qmf8rn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
